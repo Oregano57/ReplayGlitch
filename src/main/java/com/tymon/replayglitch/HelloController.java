@@ -5,10 +5,14 @@ import javafx.scene.control.Label;
 
 public class HelloController {
     @FXML
-    private Label welcomeText;
+    private Label statusLabel;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    protected void onActionOneClic() {
+        statusLabel.setText("Active");
+    }
+    @FXML
+    protected void onActionTwoClick(){
+        statusLabel.setText("Inactive");
     }
 }
